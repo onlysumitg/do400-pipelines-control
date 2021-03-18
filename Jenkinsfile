@@ -33,6 +33,10 @@ pipeline {
                                             }
                   }
               }
+              stage('Run ECHO 2>>>>>>>') {
+                   steps {
+                                                                  echo "FINAL ECHO>>"
+                                                              }}
 
     }
 }
