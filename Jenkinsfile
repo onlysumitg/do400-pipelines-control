@@ -11,6 +11,9 @@ pipeline {
               stage('Run Tests') {
                   parallel {
                       stage('Backend Tests') {
+                        input {
+                            message "Continue?"
+                        }
                           steps {
                               sh 'node ./backend/test.js'
                           }
