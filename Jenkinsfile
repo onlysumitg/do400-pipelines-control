@@ -9,7 +9,7 @@ pipeline {
         }
     stages {
               stage('Run Tests') {
-                  parallel {
+                  stages {
                       stage('Backend Tests') {
                         input {
                             message "Continue?"
