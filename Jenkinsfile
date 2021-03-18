@@ -23,7 +23,6 @@ pipeline {
                           }
                       }
                                      stage('FINAL ECHO') {
-                                                when { expression { params.RUN_FRONTEND_TESTS } }
 
                                                 steps {
                                                     echo "FINAL ECHO>>"
